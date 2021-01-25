@@ -6689,7 +6689,7 @@ commandBuffer
 
 
 def _wrap_vkCmdBeginConditionalRenderingEXT(fn):
-    def vkCmdBeginConditionalRenderingEXT(
+  def vkCmdBeginConditionalRenderingEXT(
     commandBuffer
             ,pConditionalRenderingBegin
             ,):
@@ -6698,7 +6698,7 @@ def _wrap_vkCmdBeginConditionalRenderingEXT(fn):
 
     return vkCmdBeginConditionalRenderingEXT
 def _wrap_vkCmdEndConditionalRenderingEXT(fn):
-    def vkCmdEndConditionalRenderingEXT(
+  def vkCmdEndConditionalRenderingEXT(
     commandBuffer
             ,):
         result = _callApi(fn, commandBuffer)
@@ -6777,7 +6777,7 @@ commandBuffer
 
 
 def _wrap_vkCreateAndroidSurfaceKHR(fn):
-    def vkCreateAndroidSurfaceKHR(
+  def vkCreateAndroidSurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -6802,7 +6802,7 @@ def _wrap_vkCreateAndroidSurfaceKHR(fn):
 
     return vkCreateAndroidSurfaceKHR
 def _wrap_vkGetPhysicalDeviceDisplayPropertiesKHR(fn):
-    def vkGetPhysicalDeviceDisplayPropertiesKHR(
+  def vkGetPhysicalDeviceDisplayPropertiesKHR(
     physicalDevice
             ,):
 
@@ -6825,7 +6825,7 @@ def _wrap_vkGetPhysicalDeviceDisplayPropertiesKHR(fn):
 
     return vkGetPhysicalDeviceDisplayPropertiesKHR
 def _wrap_vkGetPhysicalDeviceDisplayPlanePropertiesKHR(fn):
-    def vkGetPhysicalDeviceDisplayPlanePropertiesKHR(
+  def vkGetPhysicalDeviceDisplayPlanePropertiesKHR(
     physicalDevice
             ,):
 
@@ -6846,7 +6846,7 @@ def _wrap_vkGetPhysicalDeviceDisplayPlanePropertiesKHR(fn):
 
     return vkGetPhysicalDeviceDisplayPlanePropertiesKHR
 def _wrap_vkGetDisplayPlaneSupportedDisplaysKHR(fn):
-    def vkGetDisplayPlaneSupportedDisplaysKHR(
+  def vkGetDisplayPlaneSupportedDisplaysKHR(
     physicalDevice
             ,planeIndex
             ,):
@@ -6868,7 +6868,7 @@ def _wrap_vkGetDisplayPlaneSupportedDisplaysKHR(fn):
 
     return vkGetDisplayPlaneSupportedDisplaysKHR
 def _wrap_vkGetDisplayModePropertiesKHR(fn):
-    def vkGetDisplayModePropertiesKHR(
+  def vkGetDisplayModePropertiesKHR(
     physicalDevice
             ,display
             ,):
@@ -6890,7 +6890,7 @@ def _wrap_vkGetDisplayModePropertiesKHR(fn):
 
     return vkGetDisplayModePropertiesKHR
 def _wrap_vkCreateDisplayModeKHR(fn):
-    def vkCreateDisplayModeKHR(
+  def vkCreateDisplayModeKHR(
     physicalDevice
             ,display
             ,pCreateInfo
@@ -6916,7 +6916,7 @@ def _wrap_vkCreateDisplayModeKHR(fn):
 
     return vkCreateDisplayModeKHR
 def _wrap_vkGetDisplayPlaneCapabilitiesKHR(fn):
-    def vkGetDisplayPlaneCapabilitiesKHR(
+  def vkGetDisplayPlaneCapabilitiesKHR(
     physicalDevice
             ,mode
             ,planeIndex
@@ -6941,7 +6941,7 @@ def _wrap_vkGetDisplayPlaneCapabilitiesKHR(fn):
 
     return vkGetDisplayPlaneCapabilitiesKHR
 def _wrap_vkCreateDisplayPlaneSurfaceKHR(fn):
-    def vkCreateDisplayPlaneSurfaceKHR(
+  def vkCreateDisplayPlaneSurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -6966,7 +6966,7 @@ def _wrap_vkCreateDisplayPlaneSurfaceKHR(fn):
 
     return vkCreateDisplayPlaneSurfaceKHR
 def _wrap_vkCreateSharedSwapchainsKHR(fn):
-    def vkCreateSharedSwapchainsKHR(
+  def vkCreateSharedSwapchainsKHR(
     device
             ,swapchainCount
             ,pCreateInfos
@@ -6992,7 +6992,7 @@ def _wrap_vkCreateSharedSwapchainsKHR(fn):
 
     return vkCreateSharedSwapchainsKHR
 def _wrap_vkDestroySurfaceKHR(fn):
-    def vkDestroySurfaceKHR(
+  def vkDestroySurfaceKHR(
     instance
             ,surface
             ,pAllocator
@@ -7002,7 +7002,7 @@ def _wrap_vkDestroySurfaceKHR(fn):
 
     return vkDestroySurfaceKHR
 def _wrap_vkGetPhysicalDeviceSurfaceSupportKHR(fn):
-    def vkGetPhysicalDeviceSurfaceSupportKHR(
+  def vkGetPhysicalDeviceSurfaceSupportKHR(
     physicalDevice
             ,queueFamilyIndex
             ,surface
@@ -7027,7 +7027,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceSupportKHR(fn):
 
     return vkGetPhysicalDeviceSurfaceSupportKHR
 def _wrap_vkGetPhysicalDeviceSurfaceCapabilitiesKHR(fn):
-    def vkGetPhysicalDeviceSurfaceCapabilitiesKHR(
+  def vkGetPhysicalDeviceSurfaceCapabilitiesKHR(
     physicalDevice
             ,surface
             ,pSurfaceCapabilities=None
@@ -7051,7 +7051,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceCapabilitiesKHR(fn):
 
     return vkGetPhysicalDeviceSurfaceCapabilitiesKHR
 def _wrap_vkGetPhysicalDeviceSurfaceFormatsKHR(fn):
-    def vkGetPhysicalDeviceSurfaceFormatsKHR(
+  def vkGetPhysicalDeviceSurfaceFormatsKHR(
     physicalDevice
             ,surface
             ,):
@@ -7073,7 +7073,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceFormatsKHR(fn):
 
     return vkGetPhysicalDeviceSurfaceFormatsKHR
 def _wrap_vkGetPhysicalDeviceSurfacePresentModesKHR(fn):
-    def vkGetPhysicalDeviceSurfacePresentModesKHR(
+  def vkGetPhysicalDeviceSurfacePresentModesKHR(
     physicalDevice
             ,surface
             ,):
@@ -7095,7 +7095,7 @@ def _wrap_vkGetPhysicalDeviceSurfacePresentModesKHR(fn):
 
     return vkGetPhysicalDeviceSurfacePresentModesKHR
 def _wrap_vkCreateSwapchainKHR(fn):
-    def vkCreateSwapchainKHR(
+  def vkCreateSwapchainKHR(
     device
             ,pCreateInfo
             ,pAllocator
@@ -7120,7 +7120,7 @@ def _wrap_vkCreateSwapchainKHR(fn):
 
     return vkCreateSwapchainKHR
 def _wrap_vkDestroySwapchainKHR(fn):
-    def vkDestroySwapchainKHR(
+  def vkDestroySwapchainKHR(
     device
             ,swapchain
             ,pAllocator
@@ -7130,7 +7130,7 @@ def _wrap_vkDestroySwapchainKHR(fn):
 
     return vkDestroySwapchainKHR
 def _wrap_vkGetSwapchainImagesKHR(fn):
-    def vkGetSwapchainImagesKHR(
+  def vkGetSwapchainImagesKHR(
     device
             ,swapchain
             ,):
@@ -7152,7 +7152,7 @@ def _wrap_vkGetSwapchainImagesKHR(fn):
 
     return vkGetSwapchainImagesKHR
 def _wrap_vkAcquireNextImageKHR(fn):
-    def vkAcquireNextImageKHR(
+  def vkAcquireNextImageKHR(
     device
             ,swapchain
             ,timeout
@@ -7179,7 +7179,7 @@ def _wrap_vkAcquireNextImageKHR(fn):
 
     return vkAcquireNextImageKHR
 def _wrap_vkQueuePresentKHR(fn):
-    def vkQueuePresentKHR(
+  def vkQueuePresentKHR(
     queue
             ,pPresentInfo
             ,):
@@ -7190,7 +7190,7 @@ def _wrap_vkQueuePresentKHR(fn):
 
     return vkQueuePresentKHR
 def _wrap_vkCreateViSurfaceNN(fn):
-    def vkCreateViSurfaceNN(
+  def vkCreateViSurfaceNN(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7215,7 +7215,7 @@ def _wrap_vkCreateViSurfaceNN(fn):
 
     return vkCreateViSurfaceNN
 def _wrap_vkCreateWaylandSurfaceKHR(fn):
-    def vkCreateWaylandSurfaceKHR(
+  def vkCreateWaylandSurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7240,7 +7240,7 @@ def _wrap_vkCreateWaylandSurfaceKHR(fn):
 
     return vkCreateWaylandSurfaceKHR
 def _wrap_vkGetPhysicalDeviceWaylandPresentationSupportKHR(fn):
-    def vkGetPhysicalDeviceWaylandPresentationSupportKHR(
+  def vkGetPhysicalDeviceWaylandPresentationSupportKHR(
     physicalDevice
             ,queueFamilyIndex
             ,display
@@ -7250,7 +7250,7 @@ def _wrap_vkGetPhysicalDeviceWaylandPresentationSupportKHR(fn):
 
     return vkGetPhysicalDeviceWaylandPresentationSupportKHR
 def _wrap_vkCreateWin32SurfaceKHR(fn):
-    def vkCreateWin32SurfaceKHR(
+  def vkCreateWin32SurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7275,7 +7275,7 @@ def _wrap_vkCreateWin32SurfaceKHR(fn):
 
     return vkCreateWin32SurfaceKHR
 def _wrap_vkGetPhysicalDeviceWin32PresentationSupportKHR(fn):
-    def vkGetPhysicalDeviceWin32PresentationSupportKHR(
+  def vkGetPhysicalDeviceWin32PresentationSupportKHR(
     physicalDevice
             ,queueFamilyIndex
             ,):
@@ -7284,7 +7284,7 @@ def _wrap_vkGetPhysicalDeviceWin32PresentationSupportKHR(fn):
 
     return vkGetPhysicalDeviceWin32PresentationSupportKHR
 def _wrap_vkCreateXlibSurfaceKHR(fn):
-    def vkCreateXlibSurfaceKHR(
+  def vkCreateXlibSurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7309,7 +7309,7 @@ def _wrap_vkCreateXlibSurfaceKHR(fn):
 
     return vkCreateXlibSurfaceKHR
 def _wrap_vkGetPhysicalDeviceXlibPresentationSupportKHR(fn):
-    def vkGetPhysicalDeviceXlibPresentationSupportKHR(
+  def vkGetPhysicalDeviceXlibPresentationSupportKHR(
     physicalDevice
             ,queueFamilyIndex
             ,dpy
@@ -7320,7 +7320,7 @@ def _wrap_vkGetPhysicalDeviceXlibPresentationSupportKHR(fn):
 
     return vkGetPhysicalDeviceXlibPresentationSupportKHR
 def _wrap_vkCreateXcbSurfaceKHR(fn):
-    def vkCreateXcbSurfaceKHR(
+  def vkCreateXcbSurfaceKHR(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7345,7 +7345,7 @@ def _wrap_vkCreateXcbSurfaceKHR(fn):
 
     return vkCreateXcbSurfaceKHR
 def _wrap_vkGetPhysicalDeviceXcbPresentationSupportKHR(fn):
-    def vkGetPhysicalDeviceXcbPresentationSupportKHR(
+  def vkGetPhysicalDeviceXcbPresentationSupportKHR(
     physicalDevice
             ,queueFamilyIndex
             ,connection
@@ -7356,7 +7356,7 @@ def _wrap_vkGetPhysicalDeviceXcbPresentationSupportKHR(fn):
 
     return vkGetPhysicalDeviceXcbPresentationSupportKHR
 def _wrap_vkCreateImagePipeSurfaceFUCHSIA(fn):
-    def vkCreateImagePipeSurfaceFUCHSIA(
+  def vkCreateImagePipeSurfaceFUCHSIA(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7381,7 +7381,7 @@ def _wrap_vkCreateImagePipeSurfaceFUCHSIA(fn):
 
     return vkCreateImagePipeSurfaceFUCHSIA
 def _wrap_vkCreateDebugReportCallbackEXT(fn):
-    def vkCreateDebugReportCallbackEXT(
+  def vkCreateDebugReportCallbackEXT(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -7406,7 +7406,7 @@ def _wrap_vkCreateDebugReportCallbackEXT(fn):
 
     return vkCreateDebugReportCallbackEXT
 def _wrap_vkDestroyDebugReportCallbackEXT(fn):
-    def vkDestroyDebugReportCallbackEXT(
+  def vkDestroyDebugReportCallbackEXT(
     instance
             ,callback
             ,pAllocator
@@ -7416,7 +7416,7 @@ def _wrap_vkDestroyDebugReportCallbackEXT(fn):
 
     return vkDestroyDebugReportCallbackEXT
 def _wrap_vkDebugReportMessageEXT(fn):
-    def vkDebugReportMessageEXT(
+  def vkDebugReportMessageEXT(
     instance
             ,flags
             ,objectType
@@ -7431,7 +7431,7 @@ def _wrap_vkDebugReportMessageEXT(fn):
 
     return vkDebugReportMessageEXT
 def _wrap_vkDebugMarkerSetObjectNameEXT(fn):
-    def vkDebugMarkerSetObjectNameEXT(
+  def vkDebugMarkerSetObjectNameEXT(
     device
             ,pNameInfo
             ,):
@@ -7442,7 +7442,7 @@ def _wrap_vkDebugMarkerSetObjectNameEXT(fn):
 
     return vkDebugMarkerSetObjectNameEXT
 def _wrap_vkDebugMarkerSetObjectTagEXT(fn):
-    def vkDebugMarkerSetObjectTagEXT(
+  def vkDebugMarkerSetObjectTagEXT(
     device
             ,pTagInfo
             ,):
@@ -7453,7 +7453,7 @@ def _wrap_vkDebugMarkerSetObjectTagEXT(fn):
 
     return vkDebugMarkerSetObjectTagEXT
 def _wrap_vkCmdDebugMarkerBeginEXT(fn):
-    def vkCmdDebugMarkerBeginEXT(
+  def vkCmdDebugMarkerBeginEXT(
     commandBuffer
             ,pMarkerInfo
             ,):
@@ -7462,7 +7462,7 @@ def _wrap_vkCmdDebugMarkerBeginEXT(fn):
 
     return vkCmdDebugMarkerBeginEXT
 def _wrap_vkCmdDebugMarkerEndEXT(fn):
-    def vkCmdDebugMarkerEndEXT(
+  def vkCmdDebugMarkerEndEXT(
     commandBuffer
             ,):
         result = _callApi(fn, commandBuffer)
@@ -7470,7 +7470,7 @@ def _wrap_vkCmdDebugMarkerEndEXT(fn):
 
     return vkCmdDebugMarkerEndEXT
 def _wrap_vkCmdDebugMarkerInsertEXT(fn):
-    def vkCmdDebugMarkerInsertEXT(
+  def vkCmdDebugMarkerInsertEXT(
     commandBuffer
             ,pMarkerInfo
             ,):
@@ -7479,7 +7479,7 @@ def _wrap_vkCmdDebugMarkerInsertEXT(fn):
 
     return vkCmdDebugMarkerInsertEXT
 def _wrap_vkGetPhysicalDeviceExternalImageFormatPropertiesNV(fn):
-    def vkGetPhysicalDeviceExternalImageFormatPropertiesNV(
+  def vkGetPhysicalDeviceExternalImageFormatPropertiesNV(
     physicalDevice
             ,format
             ,type
@@ -7508,7 +7508,7 @@ def _wrap_vkGetPhysicalDeviceExternalImageFormatPropertiesNV(fn):
 
     return vkGetPhysicalDeviceExternalImageFormatPropertiesNV
 def _wrap_vkGetMemoryWin32HandleNV(fn):
-    def vkGetMemoryWin32HandleNV(
+  def vkGetMemoryWin32HandleNV(
     device
             ,memory
             ,handleType
@@ -7533,7 +7533,7 @@ def _wrap_vkGetMemoryWin32HandleNV(fn):
 
     return vkGetMemoryWin32HandleNV
 def _wrap_vkCmdDrawIndirectCountAMD(fn):
-    def vkCmdDrawIndirectCountAMD(
+  def vkCmdDrawIndirectCountAMD(
     commandBuffer
             ,buffer
             ,offset
@@ -7547,7 +7547,7 @@ def _wrap_vkCmdDrawIndirectCountAMD(fn):
 
     return vkCmdDrawIndirectCountAMD
 def _wrap_vkCmdDrawIndexedIndirectCountAMD(fn):
-    def vkCmdDrawIndexedIndirectCountAMD(
+  def vkCmdDrawIndexedIndirectCountAMD(
     commandBuffer
             ,buffer
             ,offset
@@ -7561,7 +7561,7 @@ def _wrap_vkCmdDrawIndexedIndirectCountAMD(fn):
 
     return vkCmdDrawIndexedIndirectCountAMD
 def _wrap_vkCmdProcessCommandsNVX(fn):
-    def vkCmdProcessCommandsNVX(
+  def vkCmdProcessCommandsNVX(
     commandBuffer
             ,pProcessCommandsInfo
             ,):
@@ -7570,7 +7570,7 @@ def _wrap_vkCmdProcessCommandsNVX(fn):
 
     return vkCmdProcessCommandsNVX
 def _wrap_vkCmdReserveSpaceForCommandsNVX(fn):
-    def vkCmdReserveSpaceForCommandsNVX(
+  def vkCmdReserveSpaceForCommandsNVX(
     commandBuffer
             ,pReserveSpaceInfo
             ,):
@@ -7579,7 +7579,7 @@ def _wrap_vkCmdReserveSpaceForCommandsNVX(fn):
 
     return vkCmdReserveSpaceForCommandsNVX
 def _wrap_vkCreateIndirectCommandsLayoutNVX(fn):
-    def vkCreateIndirectCommandsLayoutNVX(
+  def vkCreateIndirectCommandsLayoutNVX(
     device
             ,pCreateInfo
             ,pAllocator
@@ -7604,7 +7604,7 @@ def _wrap_vkCreateIndirectCommandsLayoutNVX(fn):
 
     return vkCreateIndirectCommandsLayoutNVX
 def _wrap_vkDestroyIndirectCommandsLayoutNVX(fn):
-    def vkDestroyIndirectCommandsLayoutNVX(
+  def vkDestroyIndirectCommandsLayoutNVX(
     device
             ,indirectCommandsLayout
             ,pAllocator
@@ -7614,7 +7614,7 @@ def _wrap_vkDestroyIndirectCommandsLayoutNVX(fn):
 
     return vkDestroyIndirectCommandsLayoutNVX
 def _wrap_vkCreateObjectTableNVX(fn):
-    def vkCreateObjectTableNVX(
+  def vkCreateObjectTableNVX(
     device
             ,pCreateInfo
             ,pAllocator
@@ -7639,7 +7639,7 @@ def _wrap_vkCreateObjectTableNVX(fn):
 
     return vkCreateObjectTableNVX
 def _wrap_vkDestroyObjectTableNVX(fn):
-    def vkDestroyObjectTableNVX(
+  def vkDestroyObjectTableNVX(
     device
             ,objectTable
             ,pAllocator
@@ -7649,7 +7649,7 @@ def _wrap_vkDestroyObjectTableNVX(fn):
 
     return vkDestroyObjectTableNVX
 def _wrap_vkRegisterObjectsNVX(fn):
-    def vkRegisterObjectsNVX(
+  def vkRegisterObjectsNVX(
     device
             ,objectTable
             ,objectCount
@@ -7663,7 +7663,7 @@ def _wrap_vkRegisterObjectsNVX(fn):
 
     return vkRegisterObjectsNVX
 def _wrap_vkUnregisterObjectsNVX(fn):
-    def vkUnregisterObjectsNVX(
+  def vkUnregisterObjectsNVX(
     device
             ,objectTable
             ,objectCount
@@ -7677,7 +7677,7 @@ def _wrap_vkUnregisterObjectsNVX(fn):
 
     return vkUnregisterObjectsNVX
 def _wrap_vkGetPhysicalDeviceGeneratedCommandsPropertiesNVX(fn):
-    def vkGetPhysicalDeviceGeneratedCommandsPropertiesNVX(
+  def vkGetPhysicalDeviceGeneratedCommandsPropertiesNVX(
     physicalDevice
             ,pFeatures
             ,pLimits=None
@@ -7699,7 +7699,7 @@ def _wrap_vkGetPhysicalDeviceGeneratedCommandsPropertiesNVX(fn):
 
     return vkGetPhysicalDeviceGeneratedCommandsPropertiesNVX
 def _wrap_vkGetPhysicalDeviceFeatures2(fn):
-    def vkGetPhysicalDeviceFeatures2(
+  def vkGetPhysicalDeviceFeatures2(
     physicalDevice
             ,pFeatures=None
             ,):
@@ -7720,7 +7720,7 @@ def _wrap_vkGetPhysicalDeviceFeatures2(fn):
 
     return vkGetPhysicalDeviceFeatures2
 def _wrap_vkGetPhysicalDeviceProperties2(fn):
-    def vkGetPhysicalDeviceProperties2(
+  def vkGetPhysicalDeviceProperties2(
     physicalDevice
             ,pProperties=None
             ,):
@@ -7741,7 +7741,7 @@ def _wrap_vkGetPhysicalDeviceProperties2(fn):
 
     return vkGetPhysicalDeviceProperties2
 def _wrap_vkGetPhysicalDeviceFormatProperties2(fn):
-    def vkGetPhysicalDeviceFormatProperties2(
+  def vkGetPhysicalDeviceFormatProperties2(
     physicalDevice
             ,format
             ,pFormatProperties=None
@@ -7763,7 +7763,7 @@ def _wrap_vkGetPhysicalDeviceFormatProperties2(fn):
 
     return vkGetPhysicalDeviceFormatProperties2
 def _wrap_vkGetPhysicalDeviceImageFormatProperties2(fn):
-    def vkGetPhysicalDeviceImageFormatProperties2(
+  def vkGetPhysicalDeviceImageFormatProperties2(
     physicalDevice
             ,pImageFormatInfo
             ,pImageFormatProperties=None
@@ -7787,7 +7787,7 @@ def _wrap_vkGetPhysicalDeviceImageFormatProperties2(fn):
 
     return vkGetPhysicalDeviceImageFormatProperties2
 def _wrap_vkGetPhysicalDeviceQueueFamilyProperties2(fn):
-    def vkGetPhysicalDeviceQueueFamilyProperties2(
+  def vkGetPhysicalDeviceQueueFamilyProperties2(
     physicalDevice
             ,):
 
@@ -7804,7 +7804,7 @@ def _wrap_vkGetPhysicalDeviceQueueFamilyProperties2(fn):
 
     return vkGetPhysicalDeviceQueueFamilyProperties2
 def _wrap_vkGetPhysicalDeviceMemoryProperties2(fn):
-    def vkGetPhysicalDeviceMemoryProperties2(
+  def vkGetPhysicalDeviceMemoryProperties2(
     physicalDevice
             ,pMemoryProperties=None
             ,):
@@ -7825,7 +7825,7 @@ def _wrap_vkGetPhysicalDeviceMemoryProperties2(fn):
 
     return vkGetPhysicalDeviceMemoryProperties2
 def _wrap_vkGetPhysicalDeviceSparseImageFormatProperties2(fn):
-    def vkGetPhysicalDeviceSparseImageFormatProperties2(
+  def vkGetPhysicalDeviceSparseImageFormatProperties2(
     physicalDevice
             ,pFormatInfo
             ,):
@@ -7843,7 +7843,7 @@ def _wrap_vkGetPhysicalDeviceSparseImageFormatProperties2(fn):
 
     return vkGetPhysicalDeviceSparseImageFormatProperties2
 def _wrap_vkCmdPushDescriptorSetKHR(fn):
-    def vkCmdPushDescriptorSetKHR(
+  def vkCmdPushDescriptorSetKHR(
     commandBuffer
             ,pipelineBindPoint
             ,layout
@@ -7856,7 +7856,7 @@ def _wrap_vkCmdPushDescriptorSetKHR(fn):
 
     return vkCmdPushDescriptorSetKHR
 def _wrap_vkTrimCommandPool(fn):
-    def vkTrimCommandPool(
+  def vkTrimCommandPool(
     device
             ,commandPool
             ,flags
@@ -7866,7 +7866,7 @@ def _wrap_vkTrimCommandPool(fn):
 
     return vkTrimCommandPool
 def _wrap_vkGetPhysicalDeviceExternalBufferProperties(fn):
-    def vkGetPhysicalDeviceExternalBufferProperties(
+  def vkGetPhysicalDeviceExternalBufferProperties(
     physicalDevice
             ,pExternalBufferInfo
             ,pExternalBufferProperties=None
@@ -7888,7 +7888,7 @@ def _wrap_vkGetPhysicalDeviceExternalBufferProperties(fn):
 
     return vkGetPhysicalDeviceExternalBufferProperties
 def _wrap_vkGetMemoryWin32HandleKHR(fn):
-    def vkGetMemoryWin32HandleKHR(
+  def vkGetMemoryWin32HandleKHR(
     device
             ,pGetWin32HandleInfo
             ,pHandle=None
@@ -7912,7 +7912,7 @@ def _wrap_vkGetMemoryWin32HandleKHR(fn):
 
     return vkGetMemoryWin32HandleKHR
 def _wrap_vkGetMemoryWin32HandlePropertiesKHR(fn):
-    def vkGetMemoryWin32HandlePropertiesKHR(
+  def vkGetMemoryWin32HandlePropertiesKHR(
     device
             ,handleType
             ,handle
@@ -7937,7 +7937,7 @@ def _wrap_vkGetMemoryWin32HandlePropertiesKHR(fn):
 
     return vkGetMemoryWin32HandlePropertiesKHR
 def _wrap_vkGetMemoryFdKHR(fn):
-    def vkGetMemoryFdKHR(
+  def vkGetMemoryFdKHR(
     device
             ,pGetFdInfo
             ,pFd=None
@@ -7961,7 +7961,7 @@ def _wrap_vkGetMemoryFdKHR(fn):
 
     return vkGetMemoryFdKHR
 def _wrap_vkGetMemoryFdPropertiesKHR(fn):
-    def vkGetMemoryFdPropertiesKHR(
+  def vkGetMemoryFdPropertiesKHR(
     device
             ,handleType
             ,fd
@@ -7986,7 +7986,7 @@ def _wrap_vkGetMemoryFdPropertiesKHR(fn):
 
     return vkGetMemoryFdPropertiesKHR
 def _wrap_vkGetPhysicalDeviceExternalSemaphoreProperties(fn):
-    def vkGetPhysicalDeviceExternalSemaphoreProperties(
+  def vkGetPhysicalDeviceExternalSemaphoreProperties(
     physicalDevice
             ,pExternalSemaphoreInfo
             ,pExternalSemaphoreProperties=None
@@ -8008,7 +8008,7 @@ def _wrap_vkGetPhysicalDeviceExternalSemaphoreProperties(fn):
 
     return vkGetPhysicalDeviceExternalSemaphoreProperties
 def _wrap_vkGetSemaphoreWin32HandleKHR(fn):
-    def vkGetSemaphoreWin32HandleKHR(
+  def vkGetSemaphoreWin32HandleKHR(
     device
             ,pGetWin32HandleInfo
             ,pHandle=None
@@ -8032,7 +8032,7 @@ def _wrap_vkGetSemaphoreWin32HandleKHR(fn):
 
     return vkGetSemaphoreWin32HandleKHR
 def _wrap_vkImportSemaphoreWin32HandleKHR(fn):
-    def vkImportSemaphoreWin32HandleKHR(
+  def vkImportSemaphoreWin32HandleKHR(
     device
             ,pImportSemaphoreWin32HandleInfo
             ,):
@@ -8043,7 +8043,7 @@ def _wrap_vkImportSemaphoreWin32HandleKHR(fn):
 
     return vkImportSemaphoreWin32HandleKHR
 def _wrap_vkGetSemaphoreFdKHR(fn):
-    def vkGetSemaphoreFdKHR(
+  def vkGetSemaphoreFdKHR(
     device
             ,pGetFdInfo
             ,pFd=None
@@ -8067,7 +8067,7 @@ def _wrap_vkGetSemaphoreFdKHR(fn):
 
     return vkGetSemaphoreFdKHR
 def _wrap_vkImportSemaphoreFdKHR(fn):
-    def vkImportSemaphoreFdKHR(
+  def vkImportSemaphoreFdKHR(
     device
             ,pImportSemaphoreFdInfo
             ,):
@@ -8078,7 +8078,7 @@ def _wrap_vkImportSemaphoreFdKHR(fn):
 
     return vkImportSemaphoreFdKHR
 def _wrap_vkGetPhysicalDeviceExternalFenceProperties(fn):
-    def vkGetPhysicalDeviceExternalFenceProperties(
+  def vkGetPhysicalDeviceExternalFenceProperties(
     physicalDevice
             ,pExternalFenceInfo
             ,pExternalFenceProperties=None
@@ -8100,7 +8100,7 @@ def _wrap_vkGetPhysicalDeviceExternalFenceProperties(fn):
 
     return vkGetPhysicalDeviceExternalFenceProperties
 def _wrap_vkGetFenceWin32HandleKHR(fn):
-    def vkGetFenceWin32HandleKHR(
+  def vkGetFenceWin32HandleKHR(
     device
             ,pGetWin32HandleInfo
             ,pHandle=None
@@ -8124,7 +8124,7 @@ def _wrap_vkGetFenceWin32HandleKHR(fn):
 
     return vkGetFenceWin32HandleKHR
 def _wrap_vkImportFenceWin32HandleKHR(fn):
-    def vkImportFenceWin32HandleKHR(
+  def vkImportFenceWin32HandleKHR(
     device
             ,pImportFenceWin32HandleInfo
             ,):
@@ -8135,7 +8135,7 @@ def _wrap_vkImportFenceWin32HandleKHR(fn):
 
     return vkImportFenceWin32HandleKHR
 def _wrap_vkGetFenceFdKHR(fn):
-    def vkGetFenceFdKHR(
+  def vkGetFenceFdKHR(
     device
             ,pGetFdInfo
             ,pFd=None
@@ -8159,7 +8159,7 @@ def _wrap_vkGetFenceFdKHR(fn):
 
     return vkGetFenceFdKHR
 def _wrap_vkImportFenceFdKHR(fn):
-    def vkImportFenceFdKHR(
+  def vkImportFenceFdKHR(
     device
             ,pImportFenceFdInfo
             ,):
@@ -8170,7 +8170,7 @@ def _wrap_vkImportFenceFdKHR(fn):
 
     return vkImportFenceFdKHR
 def _wrap_vkReleaseDisplayEXT(fn):
-    def vkReleaseDisplayEXT(
+  def vkReleaseDisplayEXT(
     physicalDevice
             ,display
             ,):
@@ -8181,7 +8181,7 @@ def _wrap_vkReleaseDisplayEXT(fn):
 
     return vkReleaseDisplayEXT
 def _wrap_vkAcquireXlibDisplayEXT(fn):
-    def vkAcquireXlibDisplayEXT(
+  def vkAcquireXlibDisplayEXT(
     physicalDevice
             ,dpy
             ,display=None
@@ -8205,7 +8205,7 @@ def _wrap_vkAcquireXlibDisplayEXT(fn):
 
     return vkAcquireXlibDisplayEXT
 def _wrap_vkGetRandROutputDisplayEXT(fn):
-    def vkGetRandROutputDisplayEXT(
+  def vkGetRandROutputDisplayEXT(
     physicalDevice
             ,dpy
             ,rrOutput
@@ -8230,7 +8230,7 @@ def _wrap_vkGetRandROutputDisplayEXT(fn):
 
     return vkGetRandROutputDisplayEXT
 def _wrap_vkDisplayPowerControlEXT(fn):
-    def vkDisplayPowerControlEXT(
+  def vkDisplayPowerControlEXT(
     device
             ,display
             ,pDisplayPowerInfo
@@ -8242,7 +8242,7 @@ def _wrap_vkDisplayPowerControlEXT(fn):
 
     return vkDisplayPowerControlEXT
 def _wrap_vkRegisterDeviceEventEXT(fn):
-    def vkRegisterDeviceEventEXT(
+  def vkRegisterDeviceEventEXT(
     device
             ,pDeviceEventInfo
             ,pAllocator
@@ -8255,7 +8255,7 @@ def _wrap_vkRegisterDeviceEventEXT(fn):
 
     return vkRegisterDeviceEventEXT
 def _wrap_vkRegisterDisplayEventEXT(fn):
-    def vkRegisterDisplayEventEXT(
+  def vkRegisterDisplayEventEXT(
     device
             ,display
             ,pDisplayEventInfo
@@ -8269,7 +8269,7 @@ def _wrap_vkRegisterDisplayEventEXT(fn):
 
     return vkRegisterDisplayEventEXT
 def _wrap_vkGetSwapchainCounterEXT(fn):
-    def vkGetSwapchainCounterEXT(
+  def vkGetSwapchainCounterEXT(
     device
             ,swapchain
             ,counter
@@ -8294,7 +8294,7 @@ def _wrap_vkGetSwapchainCounterEXT(fn):
 
     return vkGetSwapchainCounterEXT
 def _wrap_vkGetPhysicalDeviceSurfaceCapabilities2EXT(fn):
-    def vkGetPhysicalDeviceSurfaceCapabilities2EXT(
+  def vkGetPhysicalDeviceSurfaceCapabilities2EXT(
     physicalDevice
             ,surface
             ,pSurfaceCapabilities=None
@@ -8318,7 +8318,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceCapabilities2EXT(fn):
 
     return vkGetPhysicalDeviceSurfaceCapabilities2EXT
 def _wrap_vkEnumeratePhysicalDeviceGroups(fn):
-    def vkEnumeratePhysicalDeviceGroups(
+  def vkEnumeratePhysicalDeviceGroups(
     instance
             ,):
 
@@ -8339,7 +8339,7 @@ def _wrap_vkEnumeratePhysicalDeviceGroups(fn):
 
     return vkEnumeratePhysicalDeviceGroups
 def _wrap_vkGetDeviceGroupPeerMemoryFeatures(fn):
-    def vkGetDeviceGroupPeerMemoryFeatures(
+  def vkGetDeviceGroupPeerMemoryFeatures(
     device
             ,heapIndex
             ,localDeviceIndex
@@ -8363,7 +8363,7 @@ def _wrap_vkGetDeviceGroupPeerMemoryFeatures(fn):
 
     return vkGetDeviceGroupPeerMemoryFeatures
 def _wrap_vkBindBufferMemory2(fn):
-    def vkBindBufferMemory2(
+  def vkBindBufferMemory2(
     device
             ,bindInfoCount
             ,pBindInfos
@@ -8375,7 +8375,7 @@ def _wrap_vkBindBufferMemory2(fn):
 
     return vkBindBufferMemory2
 def _wrap_vkBindImageMemory2(fn):
-    def vkBindImageMemory2(
+  def vkBindImageMemory2(
     device
             ,bindInfoCount
             ,pBindInfos
@@ -8387,7 +8387,7 @@ def _wrap_vkBindImageMemory2(fn):
 
     return vkBindImageMemory2
 def _wrap_vkCmdSetDeviceMask(fn):
-    def vkCmdSetDeviceMask(
+  def vkCmdSetDeviceMask(
     commandBuffer
             ,deviceMask
             ,):
@@ -8396,7 +8396,7 @@ def _wrap_vkCmdSetDeviceMask(fn):
 
     return vkCmdSetDeviceMask
 def _wrap_vkGetDeviceGroupPresentCapabilitiesKHR(fn):
-    def vkGetDeviceGroupPresentCapabilitiesKHR(
+  def vkGetDeviceGroupPresentCapabilitiesKHR(
     device
             ,pDeviceGroupPresentCapabilities=None
             ,):
@@ -8419,7 +8419,7 @@ def _wrap_vkGetDeviceGroupPresentCapabilitiesKHR(fn):
 
     return vkGetDeviceGroupPresentCapabilitiesKHR
 def _wrap_vkGetDeviceGroupSurfacePresentModesKHR(fn):
-    def vkGetDeviceGroupSurfacePresentModesKHR(
+  def vkGetDeviceGroupSurfacePresentModesKHR(
     device
             ,surface
             ,pModes=None
@@ -8443,7 +8443,7 @@ def _wrap_vkGetDeviceGroupSurfacePresentModesKHR(fn):
 
     return vkGetDeviceGroupSurfacePresentModesKHR
 def _wrap_vkAcquireNextImage2KHR(fn):
-    def vkAcquireNextImage2KHR(
+  def vkAcquireNextImage2KHR(
     device
             ,):
 
@@ -8464,7 +8464,7 @@ def _wrap_vkAcquireNextImage2KHR(fn):
 
     return vkAcquireNextImage2KHR
 def _wrap_vkCmdDispatchBase(fn):
-    def vkCmdDispatchBase(
+  def vkCmdDispatchBase(
     commandBuffer
             ,baseGroupX
             ,baseGroupY
@@ -8478,7 +8478,7 @@ def _wrap_vkCmdDispatchBase(fn):
 
     return vkCmdDispatchBase
 def _wrap_vkGetPhysicalDevicePresentRectanglesKHR(fn):
-    def vkGetPhysicalDevicePresentRectanglesKHR(
+  def vkGetPhysicalDevicePresentRectanglesKHR(
     physicalDevice
             ,surface
             ,):
@@ -8500,7 +8500,7 @@ def _wrap_vkGetPhysicalDevicePresentRectanglesKHR(fn):
 
     return vkGetPhysicalDevicePresentRectanglesKHR
 def _wrap_vkCreateDescriptorUpdateTemplate(fn):
-    def vkCreateDescriptorUpdateTemplate(
+  def vkCreateDescriptorUpdateTemplate(
     device
             ,pCreateInfo
             ,pAllocator
@@ -8525,7 +8525,7 @@ def _wrap_vkCreateDescriptorUpdateTemplate(fn):
 
     return vkCreateDescriptorUpdateTemplate
 def _wrap_vkDestroyDescriptorUpdateTemplate(fn):
-    def vkDestroyDescriptorUpdateTemplate(
+  def vkDestroyDescriptorUpdateTemplate(
     device
             ,descriptorUpdateTemplate
             ,pAllocator
@@ -8535,7 +8535,7 @@ def _wrap_vkDestroyDescriptorUpdateTemplate(fn):
 
     return vkDestroyDescriptorUpdateTemplate
 def _wrap_vkUpdateDescriptorSetWithTemplate(fn):
-    def vkUpdateDescriptorSetWithTemplate(
+  def vkUpdateDescriptorSetWithTemplate(
     device
             ,descriptorSet
             ,descriptorUpdateTemplate
@@ -8546,7 +8546,7 @@ def _wrap_vkUpdateDescriptorSetWithTemplate(fn):
 
     return vkUpdateDescriptorSetWithTemplate
 def _wrap_vkCmdPushDescriptorSetWithTemplateKHR(fn):
-    def vkCmdPushDescriptorSetWithTemplateKHR(
+  def vkCmdPushDescriptorSetWithTemplateKHR(
     commandBuffer
             ,descriptorUpdateTemplate
             ,layout
@@ -8558,7 +8558,7 @@ def _wrap_vkCmdPushDescriptorSetWithTemplateKHR(fn):
 
     return vkCmdPushDescriptorSetWithTemplateKHR
 def _wrap_vkSetHdrMetadataEXT(fn):
-    def vkSetHdrMetadataEXT(
+  def vkSetHdrMetadataEXT(
     device
             ,swapchainCount
             ,pSwapchains
@@ -8569,7 +8569,7 @@ def _wrap_vkSetHdrMetadataEXT(fn):
 
     return vkSetHdrMetadataEXT
 def _wrap_vkGetSwapchainStatusKHR(fn):
-    def vkGetSwapchainStatusKHR(
+  def vkGetSwapchainStatusKHR(
     device
             ,swapchain=None
             ,):
@@ -8592,7 +8592,7 @@ def _wrap_vkGetSwapchainStatusKHR(fn):
 
     return vkGetSwapchainStatusKHR
 def _wrap_vkGetRefreshCycleDurationGOOGLE(fn):
-    def vkGetRefreshCycleDurationGOOGLE(
+  def vkGetRefreshCycleDurationGOOGLE(
     device
             ,swapchain
             ,pDisplayTimingProperties=None
@@ -8616,7 +8616,7 @@ def _wrap_vkGetRefreshCycleDurationGOOGLE(fn):
 
     return vkGetRefreshCycleDurationGOOGLE
 def _wrap_vkGetPastPresentationTimingGOOGLE(fn):
-    def vkGetPastPresentationTimingGOOGLE(
+  def vkGetPastPresentationTimingGOOGLE(
     device
             ,swapchain
             ,):
@@ -8638,7 +8638,7 @@ def _wrap_vkGetPastPresentationTimingGOOGLE(fn):
 
     return vkGetPastPresentationTimingGOOGLE
 def _wrap_vkCreateIOSSurfaceMVK(fn):
-    def vkCreateIOSSurfaceMVK(
+  def vkCreateIOSSurfaceMVK(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -8663,7 +8663,7 @@ def _wrap_vkCreateIOSSurfaceMVK(fn):
 
     return vkCreateIOSSurfaceMVK
 def _wrap_vkCreateMacOSSurfaceMVK(fn):
-    def vkCreateMacOSSurfaceMVK(
+  def vkCreateMacOSSurfaceMVK(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -8688,7 +8688,7 @@ def _wrap_vkCreateMacOSSurfaceMVK(fn):
 
     return vkCreateMacOSSurfaceMVK
 def _wrap_vkCmdSetViewportWScalingNV(fn):
-    def vkCmdSetViewportWScalingNV(
+  def vkCmdSetViewportWScalingNV(
     commandBuffer
             ,firstViewport
             ,viewportCount
@@ -8699,7 +8699,7 @@ def _wrap_vkCmdSetViewportWScalingNV(fn):
 
     return vkCmdSetViewportWScalingNV
 def _wrap_vkCmdSetDiscardRectangleEXT(fn):
-    def vkCmdSetDiscardRectangleEXT(
+  def vkCmdSetDiscardRectangleEXT(
     commandBuffer
             ,firstDiscardRectangle
             ,discardRectangleCount
@@ -8710,7 +8710,7 @@ def _wrap_vkCmdSetDiscardRectangleEXT(fn):
 
     return vkCmdSetDiscardRectangleEXT
 def _wrap_vkCmdSetSampleLocationsEXT(fn):
-    def vkCmdSetSampleLocationsEXT(
+  def vkCmdSetSampleLocationsEXT(
     commandBuffer
             ,pSampleLocationsInfo
             ,):
@@ -8719,7 +8719,7 @@ def _wrap_vkCmdSetSampleLocationsEXT(fn):
 
     return vkCmdSetSampleLocationsEXT
 def _wrap_vkGetPhysicalDeviceMultisamplePropertiesEXT(fn):
-    def vkGetPhysicalDeviceMultisamplePropertiesEXT(
+  def vkGetPhysicalDeviceMultisamplePropertiesEXT(
     physicalDevice
             ,samples
             ,pMultisampleProperties=None
@@ -8741,7 +8741,7 @@ def _wrap_vkGetPhysicalDeviceMultisamplePropertiesEXT(fn):
 
     return vkGetPhysicalDeviceMultisamplePropertiesEXT
 def _wrap_vkGetPhysicalDeviceSurfaceCapabilities2KHR(fn):
-    def vkGetPhysicalDeviceSurfaceCapabilities2KHR(
+  def vkGetPhysicalDeviceSurfaceCapabilities2KHR(
     physicalDevice
             ,pSurfaceInfo
             ,pSurfaceCapabilities=None
@@ -8765,7 +8765,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceCapabilities2KHR(fn):
 
     return vkGetPhysicalDeviceSurfaceCapabilities2KHR
 def _wrap_vkGetPhysicalDeviceSurfaceFormats2KHR(fn):
-    def vkGetPhysicalDeviceSurfaceFormats2KHR(
+  def vkGetPhysicalDeviceSurfaceFormats2KHR(
     physicalDevice
             ,pSurfaceInfo
             ,):
@@ -8787,7 +8787,7 @@ def _wrap_vkGetPhysicalDeviceSurfaceFormats2KHR(fn):
 
     return vkGetPhysicalDeviceSurfaceFormats2KHR
 def _wrap_vkGetPhysicalDeviceDisplayProperties2KHR(fn):
-    def vkGetPhysicalDeviceDisplayProperties2KHR(
+  def vkGetPhysicalDeviceDisplayProperties2KHR(
     physicalDevice
             ,):
 
@@ -8808,7 +8808,7 @@ def _wrap_vkGetPhysicalDeviceDisplayProperties2KHR(fn):
 
     return vkGetPhysicalDeviceDisplayProperties2KHR
 def _wrap_vkGetPhysicalDeviceDisplayPlaneProperties2KHR(fn):
-    def vkGetPhysicalDeviceDisplayPlaneProperties2KHR(
+  def vkGetPhysicalDeviceDisplayPlaneProperties2KHR(
     physicalDevice
             ,):
 
@@ -8829,7 +8829,7 @@ def _wrap_vkGetPhysicalDeviceDisplayPlaneProperties2KHR(fn):
 
     return vkGetPhysicalDeviceDisplayPlaneProperties2KHR
 def _wrap_vkGetDisplayModeProperties2KHR(fn):
-    def vkGetDisplayModeProperties2KHR(
+  def vkGetDisplayModeProperties2KHR(
     physicalDevice
             ,display
             ,):
@@ -8851,7 +8851,7 @@ def _wrap_vkGetDisplayModeProperties2KHR(fn):
 
     return vkGetDisplayModeProperties2KHR
 def _wrap_vkGetDisplayPlaneCapabilities2KHR(fn):
-    def vkGetDisplayPlaneCapabilities2KHR(
+  def vkGetDisplayPlaneCapabilities2KHR(
     physicalDevice
             ,pDisplayPlaneInfo
             ,pCapabilities=None
@@ -8875,7 +8875,7 @@ def _wrap_vkGetDisplayPlaneCapabilities2KHR(fn):
 
     return vkGetDisplayPlaneCapabilities2KHR
 def _wrap_vkGetBufferMemoryRequirements2(fn):
-    def vkGetBufferMemoryRequirements2(
+  def vkGetBufferMemoryRequirements2(
     device
             ,pInfo
             ,pMemoryRequirements=None
@@ -8897,7 +8897,7 @@ def _wrap_vkGetBufferMemoryRequirements2(fn):
 
     return vkGetBufferMemoryRequirements2
 def _wrap_vkGetImageMemoryRequirements2(fn):
-    def vkGetImageMemoryRequirements2(
+  def vkGetImageMemoryRequirements2(
     device
             ,pInfo
             ,pMemoryRequirements=None
@@ -8919,7 +8919,7 @@ def _wrap_vkGetImageMemoryRequirements2(fn):
 
     return vkGetImageMemoryRequirements2
 def _wrap_vkGetImageSparseMemoryRequirements2(fn):
-    def vkGetImageSparseMemoryRequirements2(
+  def vkGetImageSparseMemoryRequirements2(
     device
             ,pInfo
             ,):
@@ -8937,7 +8937,7 @@ def _wrap_vkGetImageSparseMemoryRequirements2(fn):
 
     return vkGetImageSparseMemoryRequirements2
 def _wrap_vkCreateSamplerYcbcrConversion(fn):
-    def vkCreateSamplerYcbcrConversion(
+  def vkCreateSamplerYcbcrConversion(
     device
             ,pCreateInfo
             ,pAllocator
@@ -8962,7 +8962,7 @@ def _wrap_vkCreateSamplerYcbcrConversion(fn):
 
     return vkCreateSamplerYcbcrConversion
 def _wrap_vkDestroySamplerYcbcrConversion(fn):
-    def vkDestroySamplerYcbcrConversion(
+  def vkDestroySamplerYcbcrConversion(
     device
             ,ycbcrConversion
             ,pAllocator
@@ -8992,7 +8992,7 @@ device
 
 
 def _wrap_vkCreateValidationCacheEXT(fn):
-    def vkCreateValidationCacheEXT(
+  def vkCreateValidationCacheEXT(
     device
             ,pCreateInfo
             ,pAllocator
@@ -9017,7 +9017,7 @@ def _wrap_vkCreateValidationCacheEXT(fn):
 
     return vkCreateValidationCacheEXT
 def _wrap_vkDestroyValidationCacheEXT(fn):
-    def vkDestroyValidationCacheEXT(
+  def vkDestroyValidationCacheEXT(
     device
             ,validationCache
             ,pAllocator
@@ -9027,7 +9027,7 @@ def _wrap_vkDestroyValidationCacheEXT(fn):
 
     return vkDestroyValidationCacheEXT
 def _wrap_vkGetValidationCacheDataEXT(fn):
-    def vkGetValidationCacheDataEXT(
+  def vkGetValidationCacheDataEXT(
     device
             ,validationCache
             ,pDataSize
@@ -9052,7 +9052,7 @@ def _wrap_vkGetValidationCacheDataEXT(fn):
 
     return vkGetValidationCacheDataEXT
 def _wrap_vkMergeValidationCachesEXT(fn):
-    def vkMergeValidationCachesEXT(
+  def vkMergeValidationCachesEXT(
     device
             ,dstCache
             ,srcCacheCount
@@ -9065,7 +9065,7 @@ def _wrap_vkMergeValidationCachesEXT(fn):
 
     return vkMergeValidationCachesEXT
 def _wrap_vkGetDescriptorSetLayoutSupport(fn):
-    def vkGetDescriptorSetLayoutSupport(
+  def vkGetDescriptorSetLayoutSupport(
     device
             ,pCreateInfo
             ,pSupport=None
@@ -9087,7 +9087,7 @@ def _wrap_vkGetDescriptorSetLayoutSupport(fn):
 
     return vkGetDescriptorSetLayoutSupport
 def _wrap_vkGetSwapchainGrallocUsageANDROID(fn):
-    def vkGetSwapchainGrallocUsageANDROID(
+  def vkGetSwapchainGrallocUsageANDROID(
     device
             ,format
             ,imageUsage
@@ -9112,7 +9112,7 @@ def _wrap_vkGetSwapchainGrallocUsageANDROID(fn):
 
     return vkGetSwapchainGrallocUsageANDROID
 def _wrap_vkAcquireImageANDROID(fn):
-    def vkAcquireImageANDROID(
+  def vkAcquireImageANDROID(
     device
             ,image
             ,nativeFenceFd
@@ -9138,7 +9138,7 @@ def _wrap_vkAcquireImageANDROID(fn):
 
     return vkAcquireImageANDROID
 def _wrap_vkQueueSignalReleaseImageANDROID(fn):
-    def vkQueueSignalReleaseImageANDROID(
+  def vkQueueSignalReleaseImageANDROID(
     queue
             ,waitSemaphoreCount
             ,pWaitSemaphores
@@ -9152,7 +9152,7 @@ def _wrap_vkQueueSignalReleaseImageANDROID(fn):
 
     return vkQueueSignalReleaseImageANDROID
 def _wrap_vkGetShaderInfoAMD(fn):
-    def vkGetShaderInfoAMD(
+  def vkGetShaderInfoAMD(
     device
             ,pipeline
             ,shaderStage
@@ -9179,7 +9179,7 @@ def _wrap_vkGetShaderInfoAMD(fn):
 
     return vkGetShaderInfoAMD
 def _wrap_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(fn):
-    def vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(
+  def vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(
     physicalDevice
             ,):
 
@@ -9200,7 +9200,7 @@ def _wrap_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(fn):
 
     return vkGetPhysicalDeviceCalibrateableTimeDomainsEXT
 def _wrap_vkGetCalibratedTimestampsEXT(fn):
-    def vkGetCalibratedTimestampsEXT(
+  def vkGetCalibratedTimestampsEXT(
     device
             ,timestampCount
             ,pTimestampInfos
@@ -9226,7 +9226,7 @@ def _wrap_vkGetCalibratedTimestampsEXT(fn):
 
     return vkGetCalibratedTimestampsEXT
 def _wrap_vkSetDebugUtilsObjectNameEXT(fn):
-    def vkSetDebugUtilsObjectNameEXT(
+  def vkSetDebugUtilsObjectNameEXT(
     device
             ,pNameInfo
             ,):
@@ -9237,7 +9237,7 @@ def _wrap_vkSetDebugUtilsObjectNameEXT(fn):
 
     return vkSetDebugUtilsObjectNameEXT
 def _wrap_vkSetDebugUtilsObjectTagEXT(fn):
-    def vkSetDebugUtilsObjectTagEXT(
+  def vkSetDebugUtilsObjectTagEXT(
     device
             ,pTagInfo
             ,):
@@ -9248,7 +9248,7 @@ def _wrap_vkSetDebugUtilsObjectTagEXT(fn):
 
     return vkSetDebugUtilsObjectTagEXT
 def _wrap_vkQueueBeginDebugUtilsLabelEXT(fn):
-    def vkQueueBeginDebugUtilsLabelEXT(
+  def vkQueueBeginDebugUtilsLabelEXT(
     queue
             ,pLabelInfo
             ,):
@@ -9257,7 +9257,7 @@ def _wrap_vkQueueBeginDebugUtilsLabelEXT(fn):
 
     return vkQueueBeginDebugUtilsLabelEXT
 def _wrap_vkQueueEndDebugUtilsLabelEXT(fn):
-    def vkQueueEndDebugUtilsLabelEXT(
+  def vkQueueEndDebugUtilsLabelEXT(
     queue
             ,):
         result = _callApi(fn, queue)
@@ -9265,7 +9265,7 @@ def _wrap_vkQueueEndDebugUtilsLabelEXT(fn):
 
     return vkQueueEndDebugUtilsLabelEXT
 def _wrap_vkQueueInsertDebugUtilsLabelEXT(fn):
-    def vkQueueInsertDebugUtilsLabelEXT(
+  def vkQueueInsertDebugUtilsLabelEXT(
     queue
             ,pLabelInfo
             ,):
@@ -9274,7 +9274,7 @@ def _wrap_vkQueueInsertDebugUtilsLabelEXT(fn):
 
     return vkQueueInsertDebugUtilsLabelEXT
 def _wrap_vkCmdBeginDebugUtilsLabelEXT(fn):
-    def vkCmdBeginDebugUtilsLabelEXT(
+  def vkCmdBeginDebugUtilsLabelEXT(
     commandBuffer
             ,pLabelInfo
             ,):
@@ -9283,7 +9283,7 @@ def _wrap_vkCmdBeginDebugUtilsLabelEXT(fn):
 
     return vkCmdBeginDebugUtilsLabelEXT
 def _wrap_vkCmdEndDebugUtilsLabelEXT(fn):
-    def vkCmdEndDebugUtilsLabelEXT(
+  def vkCmdEndDebugUtilsLabelEXT(
     commandBuffer
             ,):
         result = _callApi(fn, commandBuffer)
@@ -9291,7 +9291,7 @@ def _wrap_vkCmdEndDebugUtilsLabelEXT(fn):
 
     return vkCmdEndDebugUtilsLabelEXT
 def _wrap_vkCmdInsertDebugUtilsLabelEXT(fn):
-    def vkCmdInsertDebugUtilsLabelEXT(
+  def vkCmdInsertDebugUtilsLabelEXT(
     commandBuffer
             ,pLabelInfo
             ,):
@@ -9300,7 +9300,7 @@ def _wrap_vkCmdInsertDebugUtilsLabelEXT(fn):
 
     return vkCmdInsertDebugUtilsLabelEXT
 def _wrap_vkCreateDebugUtilsMessengerEXT(fn):
-    def vkCreateDebugUtilsMessengerEXT(
+  def vkCreateDebugUtilsMessengerEXT(
     instance
             ,pCreateInfo
             ,pAllocator
@@ -9325,7 +9325,7 @@ def _wrap_vkCreateDebugUtilsMessengerEXT(fn):
 
     return vkCreateDebugUtilsMessengerEXT
 def _wrap_vkDestroyDebugUtilsMessengerEXT(fn):
-    def vkDestroyDebugUtilsMessengerEXT(
+  def vkDestroyDebugUtilsMessengerEXT(
     instance
             ,messenger
             ,pAllocator
@@ -9335,7 +9335,7 @@ def _wrap_vkDestroyDebugUtilsMessengerEXT(fn):
 
     return vkDestroyDebugUtilsMessengerEXT
 def _wrap_vkSubmitDebugUtilsMessageEXT(fn):
-    def vkSubmitDebugUtilsMessageEXT(
+  def vkSubmitDebugUtilsMessageEXT(
     instance
             ,messageSeverity
             ,messageTypes
@@ -9346,7 +9346,7 @@ def _wrap_vkSubmitDebugUtilsMessageEXT(fn):
 
     return vkSubmitDebugUtilsMessageEXT
 def _wrap_vkGetMemoryHostPointerPropertiesEXT(fn):
-    def vkGetMemoryHostPointerPropertiesEXT(
+  def vkGetMemoryHostPointerPropertiesEXT(
     device
             ,handleType
             ,pHostPointer
@@ -9371,7 +9371,7 @@ def _wrap_vkGetMemoryHostPointerPropertiesEXT(fn):
 
     return vkGetMemoryHostPointerPropertiesEXT
 def _wrap_vkCmdWriteBufferMarkerAMD(fn):
-    def vkCmdWriteBufferMarkerAMD(
+  def vkCmdWriteBufferMarkerAMD(
     commandBuffer
             ,pipelineStage
             ,dstBuffer
@@ -9383,7 +9383,7 @@ def _wrap_vkCmdWriteBufferMarkerAMD(fn):
 
     return vkCmdWriteBufferMarkerAMD
 def _wrap_vkCreateRenderPass2KHR(fn):
-    def vkCreateRenderPass2KHR(
+  def vkCreateRenderPass2KHR(
     device
             ,pCreateInfo
             ,pAllocator
@@ -9408,7 +9408,7 @@ def _wrap_vkCreateRenderPass2KHR(fn):
 
     return vkCreateRenderPass2KHR
 def _wrap_vkCmdBeginRenderPass2KHR(fn):
-    def vkCmdBeginRenderPass2KHR(
+  def vkCmdBeginRenderPass2KHR(
     commandBuffer
             ,pRenderPassBegin
             ,pSubpassBeginInfo
@@ -9418,7 +9418,7 @@ def _wrap_vkCmdBeginRenderPass2KHR(fn):
 
     return vkCmdBeginRenderPass2KHR
 def _wrap_vkCmdNextSubpass2KHR(fn):
-    def vkCmdNextSubpass2KHR(
+  def vkCmdNextSubpass2KHR(
     commandBuffer
             ,pSubpassBeginInfo
             ,pSubpassEndInfo
@@ -9428,7 +9428,7 @@ def _wrap_vkCmdNextSubpass2KHR(fn):
 
     return vkCmdNextSubpass2KHR
 def _wrap_vkCmdEndRenderPass2KHR(fn):
-    def vkCmdEndRenderPass2KHR(
+  def vkCmdEndRenderPass2KHR(
     commandBuffer
             ,pSubpassEndInfo
             ,):
@@ -9437,7 +9437,7 @@ def _wrap_vkCmdEndRenderPass2KHR(fn):
 
     return vkCmdEndRenderPass2KHR
 def _wrap_vkGetAndroidHardwareBufferPropertiesANDROID(fn):
-    def vkGetAndroidHardwareBufferPropertiesANDROID(
+  def vkGetAndroidHardwareBufferPropertiesANDROID(
     device
             ,buffer
             ,pProperties=None
@@ -9461,7 +9461,7 @@ def _wrap_vkGetAndroidHardwareBufferPropertiesANDROID(fn):
 
     return vkGetAndroidHardwareBufferPropertiesANDROID
 def _wrap_vkGetMemoryAndroidHardwareBufferANDROID(fn):
-    def vkGetMemoryAndroidHardwareBufferANDROID(
+  def vkGetMemoryAndroidHardwareBufferANDROID(
     device
             ,pInfo
             ,pBuffer=None
@@ -9485,7 +9485,7 @@ def _wrap_vkGetMemoryAndroidHardwareBufferANDROID(fn):
 
     return vkGetMemoryAndroidHardwareBufferANDROID
 def _wrap_vkCmdDrawIndirectCountKHR(fn):
-    def vkCmdDrawIndirectCountKHR(
+  def vkCmdDrawIndirectCountKHR(
     commandBuffer
             ,buffer
             ,offset
@@ -9499,7 +9499,7 @@ def _wrap_vkCmdDrawIndirectCountKHR(fn):
 
     return vkCmdDrawIndirectCountKHR
 def _wrap_vkCmdDrawIndexedIndirectCountKHR(fn):
-    def vkCmdDrawIndexedIndirectCountKHR(
+  def vkCmdDrawIndexedIndirectCountKHR(
     commandBuffer
             ,buffer
             ,offset
@@ -9513,7 +9513,7 @@ def _wrap_vkCmdDrawIndexedIndirectCountKHR(fn):
 
     return vkCmdDrawIndexedIndirectCountKHR
 def _wrap_vkCmdSetCheckpointNV(fn):
-    def vkCmdSetCheckpointNV(
+  def vkCmdSetCheckpointNV(
     commandBuffer
             ,pCheckpointMarker
             ,):
@@ -9522,7 +9522,7 @@ def _wrap_vkCmdSetCheckpointNV(fn):
 
     return vkCmdSetCheckpointNV
 def _wrap_vkGetQueueCheckpointDataNV(fn):
-    def vkGetQueueCheckpointDataNV(
+  def vkGetQueueCheckpointDataNV(
     queue
             ,):
 
@@ -9539,7 +9539,7 @@ def _wrap_vkGetQueueCheckpointDataNV(fn):
 
     return vkGetQueueCheckpointDataNV
 def _wrap_vkCmdBindTransformFeedbackBuffersEXT(fn):
-    def vkCmdBindTransformFeedbackBuffersEXT(
+  def vkCmdBindTransformFeedbackBuffersEXT(
     commandBuffer
             ,firstBinding
             ,bindingCount
@@ -9552,7 +9552,7 @@ def _wrap_vkCmdBindTransformFeedbackBuffersEXT(fn):
 
     return vkCmdBindTransformFeedbackBuffersEXT
 def _wrap_vkCmdBeginTransformFeedbackEXT(fn):
-    def vkCmdBeginTransformFeedbackEXT(
+  def vkCmdBeginTransformFeedbackEXT(
     commandBuffer
             ,firstCounterBuffer
             ,counterBufferCount
@@ -9564,7 +9564,7 @@ def _wrap_vkCmdBeginTransformFeedbackEXT(fn):
 
     return vkCmdBeginTransformFeedbackEXT
 def _wrap_vkCmdEndTransformFeedbackEXT(fn):
-    def vkCmdEndTransformFeedbackEXT(
+  def vkCmdEndTransformFeedbackEXT(
     commandBuffer
             ,firstCounterBuffer
             ,counterBufferCount
@@ -9576,7 +9576,7 @@ def _wrap_vkCmdEndTransformFeedbackEXT(fn):
 
     return vkCmdEndTransformFeedbackEXT
 def _wrap_vkCmdBeginQueryIndexedEXT(fn):
-    def vkCmdBeginQueryIndexedEXT(
+  def vkCmdBeginQueryIndexedEXT(
     commandBuffer
             ,queryPool
             ,query
@@ -9588,7 +9588,7 @@ def _wrap_vkCmdBeginQueryIndexedEXT(fn):
 
     return vkCmdBeginQueryIndexedEXT
 def _wrap_vkCmdEndQueryIndexedEXT(fn):
-    def vkCmdEndQueryIndexedEXT(
+  def vkCmdEndQueryIndexedEXT(
     commandBuffer
             ,queryPool
             ,query
@@ -9599,7 +9599,7 @@ def _wrap_vkCmdEndQueryIndexedEXT(fn):
 
     return vkCmdEndQueryIndexedEXT
 def _wrap_vkCmdDrawIndirectByteCountEXT(fn):
-    def vkCmdDrawIndirectByteCountEXT(
+  def vkCmdDrawIndirectByteCountEXT(
     commandBuffer
             ,instanceCount
             ,firstInstance
@@ -9613,7 +9613,7 @@ def _wrap_vkCmdDrawIndirectByteCountEXT(fn):
 
     return vkCmdDrawIndirectByteCountEXT
 def _wrap_vkCmdSetExclusiveScissorNV(fn):
-    def vkCmdSetExclusiveScissorNV(
+  def vkCmdSetExclusiveScissorNV(
     commandBuffer
             ,firstExclusiveScissor
             ,exclusiveScissorCount
@@ -9624,7 +9624,7 @@ def _wrap_vkCmdSetExclusiveScissorNV(fn):
 
     return vkCmdSetExclusiveScissorNV
 def _wrap_vkCmdBindShadingRateImageNV(fn):
-    def vkCmdBindShadingRateImageNV(
+  def vkCmdBindShadingRateImageNV(
     commandBuffer
             ,imageView
             ,imageLayout
@@ -9634,7 +9634,7 @@ def _wrap_vkCmdBindShadingRateImageNV(fn):
 
     return vkCmdBindShadingRateImageNV
 def _wrap_vkCmdSetViewportShadingRatePaletteNV(fn):
-    def vkCmdSetViewportShadingRatePaletteNV(
+  def vkCmdSetViewportShadingRatePaletteNV(
     commandBuffer
             ,firstViewport
             ,viewportCount
@@ -9645,7 +9645,7 @@ def _wrap_vkCmdSetViewportShadingRatePaletteNV(fn):
 
     return vkCmdSetViewportShadingRatePaletteNV
 def _wrap_vkCmdSetCoarseSampleOrderNV(fn):
-    def vkCmdSetCoarseSampleOrderNV(
+  def vkCmdSetCoarseSampleOrderNV(
     commandBuffer
             ,sampleOrderType
             ,customSampleOrderCount
@@ -9656,7 +9656,7 @@ def _wrap_vkCmdSetCoarseSampleOrderNV(fn):
 
     return vkCmdSetCoarseSampleOrderNV
 def _wrap_vkCmdDrawMeshTasksNV(fn):
-    def vkCmdDrawMeshTasksNV(
+  def vkCmdDrawMeshTasksNV(
     commandBuffer
             ,taskCount
             ,firstTask
@@ -9666,7 +9666,7 @@ def _wrap_vkCmdDrawMeshTasksNV(fn):
 
     return vkCmdDrawMeshTasksNV
 def _wrap_vkCmdDrawMeshTasksIndirectNV(fn):
-    def vkCmdDrawMeshTasksIndirectNV(
+  def vkCmdDrawMeshTasksIndirectNV(
     commandBuffer
             ,buffer
             ,offset
@@ -9678,7 +9678,7 @@ def _wrap_vkCmdDrawMeshTasksIndirectNV(fn):
 
     return vkCmdDrawMeshTasksIndirectNV
 def _wrap_vkCmdDrawMeshTasksIndirectCountNV(fn):
-    def vkCmdDrawMeshTasksIndirectCountNV(
+  def vkCmdDrawMeshTasksIndirectCountNV(
     commandBuffer
             ,buffer
             ,offset
@@ -9692,7 +9692,7 @@ def _wrap_vkCmdDrawMeshTasksIndirectCountNV(fn):
 
     return vkCmdDrawMeshTasksIndirectCountNV
 def _wrap_vkCompileDeferredNV(fn):
-    def vkCompileDeferredNV(
+  def vkCompileDeferredNV(
     device
             ,pipeline
             ,shader
@@ -9704,7 +9704,7 @@ def _wrap_vkCompileDeferredNV(fn):
 
     return vkCompileDeferredNV
 def _wrap_vkCreateAccelerationStructureNV(fn):
-    def vkCreateAccelerationStructureNV(
+  def vkCreateAccelerationStructureNV(
     device
             ,pCreateInfo
             ,pAllocator
@@ -9729,7 +9729,7 @@ def _wrap_vkCreateAccelerationStructureNV(fn):
 
     return vkCreateAccelerationStructureNV
 def _wrap_vkDestroyAccelerationStructureNV(fn):
-    def vkDestroyAccelerationStructureNV(
+  def vkDestroyAccelerationStructureNV(
     device
             ,accelerationStructure
             ,pAllocator
@@ -9739,7 +9739,7 @@ def _wrap_vkDestroyAccelerationStructureNV(fn):
 
     return vkDestroyAccelerationStructureNV
 def _wrap_vkGetAccelerationStructureMemoryRequirementsNV(fn):
-    def vkGetAccelerationStructureMemoryRequirementsNV(
+  def vkGetAccelerationStructureMemoryRequirementsNV(
     device
             ,pInfo
             ,pMemoryRequirements=None
@@ -9761,7 +9761,7 @@ def _wrap_vkGetAccelerationStructureMemoryRequirementsNV(fn):
 
     return vkGetAccelerationStructureMemoryRequirementsNV
 def _wrap_vkBindAccelerationStructureMemoryNV(fn):
-    def vkBindAccelerationStructureMemoryNV(
+  def vkBindAccelerationStructureMemoryNV(
     device
             ,bindInfoCount
             ,pBindInfos
@@ -9773,7 +9773,7 @@ def _wrap_vkBindAccelerationStructureMemoryNV(fn):
 
     return vkBindAccelerationStructureMemoryNV
 def _wrap_vkCmdCopyAccelerationStructureNV(fn):
-    def vkCmdCopyAccelerationStructureNV(
+  def vkCmdCopyAccelerationStructureNV(
     commandBuffer
             ,dst
             ,src
@@ -9784,7 +9784,7 @@ def _wrap_vkCmdCopyAccelerationStructureNV(fn):
 
     return vkCmdCopyAccelerationStructureNV
 def _wrap_vkCmdWriteAccelerationStructuresPropertiesNV(fn):
-    def vkCmdWriteAccelerationStructuresPropertiesNV(
+  def vkCmdWriteAccelerationStructuresPropertiesNV(
     commandBuffer
             ,accelerationStructureCount
             ,pAccelerationStructures
@@ -9797,7 +9797,7 @@ def _wrap_vkCmdWriteAccelerationStructuresPropertiesNV(fn):
 
     return vkCmdWriteAccelerationStructuresPropertiesNV
 def _wrap_vkCmdBuildAccelerationStructureNV(fn):
-    def vkCmdBuildAccelerationStructureNV(
+  def vkCmdBuildAccelerationStructureNV(
     commandBuffer
             ,pInfo
             ,instanceData
@@ -9813,7 +9813,7 @@ def _wrap_vkCmdBuildAccelerationStructureNV(fn):
 
     return vkCmdBuildAccelerationStructureNV
 def _wrap_vkCmdTraceRaysNV(fn):
-    def vkCmdTraceRaysNV(
+  def vkCmdTraceRaysNV(
     commandBuffer
             ,raygenShaderBindingTableBuffer
             ,raygenShaderBindingOffset
@@ -9835,7 +9835,7 @@ def _wrap_vkCmdTraceRaysNV(fn):
 
     return vkCmdTraceRaysNV
 def _wrap_vkGetRayTracingShaderGroupHandlesNV(fn):
-    def vkGetRayTracingShaderGroupHandlesNV(
+  def vkGetRayTracingShaderGroupHandlesNV(
     device
             ,pipeline
             ,firstGroup
@@ -9862,7 +9862,7 @@ def _wrap_vkGetRayTracingShaderGroupHandlesNV(fn):
 
     return vkGetRayTracingShaderGroupHandlesNV
 def _wrap_vkGetAccelerationStructureHandleNV(fn):
-    def vkGetAccelerationStructureHandleNV(
+  def vkGetAccelerationStructureHandleNV(
     device
             ,accelerationStructure
             ,dataSize
@@ -9887,7 +9887,7 @@ def _wrap_vkGetAccelerationStructureHandleNV(fn):
 
     return vkGetAccelerationStructureHandleNV
 def _wrap_vkCreateRayTracingPipelinesNV(fn):
-    def vkCreateRayTracingPipelinesNV(
+  def vkCreateRayTracingPipelinesNV(
     device
             ,pipelineCache
             ,createInfoCount
@@ -9914,7 +9914,7 @@ def _wrap_vkCreateRayTracingPipelinesNV(fn):
 
     return vkCreateRayTracingPipelinesNV
 def _wrap_vkGetImageDrmFormatModifierPropertiesEXT(fn):
-    def vkGetImageDrmFormatModifierPropertiesEXT(
+  def vkGetImageDrmFormatModifierPropertiesEXT(
     device
             ,image
             ,pProperties=None
@@ -9938,7 +9938,7 @@ def _wrap_vkGetImageDrmFormatModifierPropertiesEXT(fn):
 
     return vkGetImageDrmFormatModifierPropertiesEXT
 def _wrap_vkGetBufferDeviceAddressEXT(fn):
-    def vkGetBufferDeviceAddressEXT(
+  def vkGetBufferDeviceAddressEXT(
     device
             ,pInfo=None
             ,):
