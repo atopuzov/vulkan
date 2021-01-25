@@ -7,7 +7,7 @@ import xmltodict
 
 
 HERE = path.dirname(path.abspath(__file__))
-VENDOR_EXTENSIONS = ['KHR', 'EXT', 'NV']
+VENDOR_EXTENSIONS = ['KHR', 'EXT', 'NV', 'MVK']
 
 CUSTOM_FUNCTIONS = ('vkGetInstanceProcAddr', 'vkGetDeviceProcAddr',
                     'vkMapMemory', 'vkGetPipelineCacheData')
@@ -338,7 +338,7 @@ def model_functions(vk, model):
                 for command in req['command']:
                     cn = command['@name']
                     names.add(cn)
-                    
+
                     # add alias command too
                     for alias, n in model['alias'].items():
                         if n == cn:
@@ -350,7 +350,7 @@ def model_functions(vk, model):
         for param in command['param']:
             if param['type'] + param.get('#text', '') == 'uint32_t*':
                 return True
-        
+
         return False
 
     def member_has_str(name):
@@ -486,8 +486,8 @@ def model_alias(vk, model):
     # types
     for s in vk['registry']['types']['type']:
         if s.get('@category', None) == 'handle' and s.get('@alias'):
-            model['alias'][s['@alias']] = s['@name'] 
-              
+            model['alias'][s['@alias']] = s['@name']
+
     # commands
     for c in vk['registry']['commands']['command']:
         if c.get('@alias'):
@@ -563,6 +563,7 @@ def generate_cdef():
                '-DVK_USE_PLATFORM_ANDROID_KHR',
                '-DVK_USE_PLATFORM_WIN32_KHR',
                '-DVK_USE_PLATFORM_XLIB_KHR',
+               '-DVK_USE_PLATFORM_MACOS_MVK',
                header]
     subprocess.run(command, check=True)
 
