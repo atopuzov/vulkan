@@ -7218,6 +7218,19 @@ typedef VkResult ( *PFN_vkGetMemoryAndroidHardwareBufferANDROID)(VkDevice device
     VkDevice device,
     const VkMemoryGetAndroidHardwareBufferInfoANDROID* pInfo,
     struct AHardwareBuffer** pBuffer);
+typedef VkFlags VkMacOSSurfaceCreateFlagsMVK;
+typedef struct VkMacOSSurfaceCreateInfoMVK {
+    VkStructureType sType;
+    const void* pNext;
+    VkMacOSSurfaceCreateFlagsMVK flags;
+    const void* pView;
+} VkMacOSSurfaceCreateInfoMVK;
+typedef VkResult ( *PFN_vkCreateMacOSSurfaceMVK)(VkInstance instance, const VkMacOSSurfaceCreateInfoMVK* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface);
+ VkResult vkCreateMacOSSurfaceMVK(
+    VkInstance instance,
+    const VkMacOSSurfaceCreateInfoMVK* pCreateInfo,
+    const VkAllocationCallbacks* pAllocator,
+    VkSurfaceKHR* pSurface);
 typedef VkFlags VkWaylandSurfaceCreateFlagsKHR;
 typedef struct VkWaylandSurfaceCreateInfoKHR {
     VkStructureType sType;
